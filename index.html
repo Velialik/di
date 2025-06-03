@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Магазинчик</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://telegram.org/js/telegram-web-app.js"></script> 
+</head>
+<body>
+  <div class="header">
+    <h1>🛍️ Магазинчик</h1>
+    <div class="cart" id="cart">🛒 Товаров: 0</div>
+  </div>
+
+  <div class="container">
+    <div class="product" onclick="addToCart('Телефон', 299)">
+      <img src="https://via.placeholder.com/150"  alt="Телефон">
+      <h3>Телефон</h3>
+      <p>Цена: $299</p>
+    </div>
+
+    <div class="product" onclick="addToCart('Наушники', 99)">
+      <img src="https://via.placeholder.com/150"  alt="Наушники">
+      <h3>Наушники</h3>
+      <p>Цена: $99</p>
+    </div>
+
+    <div class="product" onclick="addToCart('Часы', 149)">
+      <img src="https://via.placeholder.com/150"  alt="Часы">
+      <h3>Часы</h3>
+      <p>Цена: $149</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
